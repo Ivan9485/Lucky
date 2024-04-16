@@ -1,0 +1,12 @@
+{
+  "inventory": [
+    {
+      "name": "kinder cookie",
+      "price": 90,
+      "description": "galleta de chocolate con kinder",
+      "image": "",
+      "ImgAltText": "",
+      "tags": ["new", "fav"]
+    }
+  ]
+}
