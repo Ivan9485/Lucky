@@ -1,4 +1,5 @@
-import inventory from "@/app/data/inventory.json"
+import {inventory} from "@/app/data/inventory.json"
+import Image from "next/image"
 
 // componente
 
@@ -8,7 +9,7 @@ const Menu = () => {
       {/* Favorites Section */}
       <div className=" flex flex-col">
         {/* Title */}
-        <div className="text-lg"> Favoritos </div>
+        <div className="text-lg text-center"> Favoritos </div>
         {/* Grid */}
         <div className="grid-flow-row">
         {
@@ -16,7 +17,8 @@ const Menu = () => {
             return (
               <div key={index}>
                 <div className="text-lg">{item.name}</div>
-                <div className="text-sm">{item.description}</div>
+                <Image src={item.image} width={100}
+      height={100} alt=""/>
                 <div className="text-sm">{item.price}</div>
               </div>
             )

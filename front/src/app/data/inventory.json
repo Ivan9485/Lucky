@@ -1,10 +1,12 @@
+
+
 {
   "inventory": [
     {
       "name": "kinder cookie",
       "price": 90,
       "description": "galleta de chocolate con kinder",
-      "image": "",
+      "image": "/assets/img/default-product.png",
       "ImgAltText": "",
       "tags": ["new"]
   },
@@ -12,7 +14,7 @@
       "name": "chocolate chip cookie",
       "price": 80,
       "description": "galleta con chispas de chocolate",
-      "image": "",
+      "image": "/assets/img/default-product.png",
       "ImgAltText": "",
       "tags": ["fav"]
   },
@@ -20,7 +22,7 @@
       "name": "oatmeal cookie",
       "price": 70,
       "description": "galleta de avena",
-      "image": "",
+      "image": "/assets/img/default-product.png",
       "ImgAltText": "",
       "tags": ["new"]
   },
@@ -28,7 +30,7 @@
       "name": "panque de limón",
       "price": 85,
       "description": "rico panque con extracto de limón",
-      "image": "",
+      "image": "/assets/img/default-product.png",
       "ImgAltText": "",
       "tags": ["offer"]
   },
@@ -36,7 +38,7 @@
       "name": "sugar cookie",
       "price": 75,
       "description": "galleta de azúcar",
-      "image": "",
+      "image": "/assets/img/default-product.png",
       "ImgAltText": "",
       "tags": []
   },
@@ -44,7 +46,7 @@
       "name": "macadamia nut cookie",
       "price": 95,
       "description": "galleta de nuez de macadamia",
-      "image": "",
+      "image": "/assets/img/default-product.png",
       "ImgAltText": "",
       "tags": []
   },
@@ -52,7 +54,7 @@
       "name": "gingerbread cookie",
       "price": 80,
       "description": "galleta de jengibre",
-      "image": "",
+      "image": "/assets/img/default-product.png",
       "ImgAltText": "",
       "tags": []
   },
@@ -60,7 +62,7 @@
       "name": "croissant",
       "price": 85,
       "description": "croissant de mantequilla",
-      "image": "",
+      "image": "/assets/img/default-product.png",
       "ImgAltText": "",
       "tags": ["offer"]
   },
@@ -68,7 +70,7 @@
       "name": "shortbread cookie",
       "price": 90,
       "description": "galleta de mantequilla",
-      "image": "",
+      "image": "/assets/img/default-product.png",
       "ImgAltText": "",
       "tags": ["fav"]
   },
@@ -76,7 +78,7 @@
       "name": "biscotti cookie",
       "price": 100,
       "description": "galleta italiana de almendras",
-      "image": "",
+      "image": "/assets/img/default-product.png",
       "ImgAltText": "",
       "tags": ["new"]
   }
