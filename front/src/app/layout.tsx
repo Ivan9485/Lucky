@@ -1,8 +1,28 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import "./globals.css";
+import localFont from "next/font/local";
+import { Fraunces } from "next/font/google"
 
-const inter = Inter({ subsets: ["latin"] });
+const milligram = localFont({
+  src: [
+    {
+      path: "./assets/fonts/Milligram-Regular-trial.ttf",
+      weight: "400",
+      style: "normal",
+    },
+    {
+      path: "./assets/fonts/Milligram-Medium-trial.ttf",
+      weight: "500",
+      style: "normal",
+    },
+  ],
+});
+
+const fraunces = Fraunces({
+  subsets: ['latin'],
+  variable: '--font-fraunces',
+  display: 'swap'
+})
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -15,8 +35,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
+    <html lang="en" className={`${fraunces.className} ${milligram.className}`}>
+      <body>{children}</body>
     </html>
   );
 }
