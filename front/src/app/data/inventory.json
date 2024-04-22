@@ -6,7 +6,79 @@
       "description": "galleta de chocolate con kinder",
       "image": "",
       "ImgAltText": "",
-      "tags": ["new", "fav"]
-    }
+      "tags": ["new"]
+  },
+  {
+      "name": "chocolate chip cookie",
+      "price": 80,
+      "description": "galleta con chispas de chocolate",
+      "image": "",
+      "ImgAltText": "",
+      "tags": ["fav"]
+  },
+  {
+      "name": "oatmeal cookie",
+      "price": 70,
+      "description": "galleta de avena",
+      "image": "",
+      "ImgAltText": "",
+      "tags": ["new"]
+  },
+  {
+      "name": "panque de limón",
+      "price": 85,
+      "description": "rico panque con extracto de limón",
+      "image": "",
+      "ImgAltText": "",
+      "tags": ["offer"]
+  },
+  {
+      "name": "sugar cookie",
+      "price": 75,
+      "description": "galleta de azúcar",
+      "image": "",
+      "ImgAltText": "",
+      "tags": []
+  },
+  {
+      "name": "macadamia nut cookie",
+      "price": 95,
+      "description": "galleta de nuez de macadamia",
+      "image": "",
+      "ImgAltText": "",
+      "tags": []
+  },
+  {
+      "name": "gingerbread cookie",
+      "price": 80,
+      "description": "galleta de jengibre",
+      "image": "",
+      "ImgAltText": "",
+      "tags": []
+  },
+  {
+      "name": "croissant",
+      "price": 85,
+      "description": "croissant de mantequilla",
+      "image": "",
+      "ImgAltText": "",
+      "tags": ["offer"]
+  },
+  {
+      "name": "shortbread cookie",
+      "price": 90,
+      "description": "galleta de mantequilla",
+      "image": "",
+      "ImgAltText": "",
+      "tags": ["fav"]
+  },
+  {
+      "name": "biscotti cookie",
+      "price": 100,
+      "description": "galleta italiana de almendras",
+      "image": "",
+      "ImgAltText": "",
+      "tags": ["new"]
+  }
   ]
 }
