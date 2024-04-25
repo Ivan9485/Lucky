@@ -1,29 +1,25 @@
-import {inventory} from "@/app/data/inventory.json"
+import inventory from "@/app/data/inventory.json"
+import { ProductInterface } from "../utils/inventory.interface"
 import Image from "next/image"
+import FavoriteCard from "./FavoriteCard"
 
 // componente
 
 const Menu = () => {
   return (
-    <div className=" w-full h-56 bg-white ">  
+    <div className=" w-full h-screen bg-white ">  
       {/* Favorites Section */}
-      <div className=" flex flex-col">
+      <div className="h-[500px] bg-yellow-100 flex flex-col">
         {/* Title */}
-        <div className="text-lg text-center"> Favoritos </div>
+        <div className="text-lg text-left ml-10 my-2"> Favoritos </div>
         {/* Grid */}
-        <div className="grid-flow-row">
-        {
-          inventory.map((item, index)=>{
-            return (
-              <div key={index}>
-                <div className="text-lg">{item.name}</div>
-                <Image src={item.image} width={100}
-      height={100} alt=""/>
-                <div className="text-sm">{item.price}</div>
-              </div>
-            )
-          }) 
-        }
+        <div className="flex w-full h-full overflow-x-auto whitespace-nowrap gap-3 flex-row">
+        {inventory.inventory.map((product: ProductInterface, index: number) => (
+            <FavoriteCard key={index} product={product}/>
+          ))}
+      
+
+       
         </div>
       </div>
       {/* Whole menu Section*/}
