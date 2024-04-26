@@ -7,10 +7,14 @@ const config: Config = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    colors: {
+      cerulean: "#1B4FC2",
+      pampas: "#F2EEEB",
+    },
     extend: {
       fontFamily: {
-        fraunces: ['var(--font-fraunces)']
-      }
+        fraunces: ["var(--font-fraunces)"],
+      },
     },
   },
   plugins: [],
