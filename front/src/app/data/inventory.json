@@ -24,7 +24,7 @@
       "description": "galleta de avena",
       "image": "/assets/img/default-product.png",
       "ImgAltText": "",
-      "tags": ["new"]
+      "tags": ["new", "fav"]
   },
   {
       "name": "panque de limón",
@@ -32,7 +32,7 @@
       "description": "rico panque con extracto de limón",
       "image": "/assets/img/default-product.png",
       "ImgAltText": "",
-      "tags": ["offer"]
+      "tags": ["offer", "fav"]
   },
   {
       "name": "sugar cookie",
