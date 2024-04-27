@@ -32,7 +32,7 @@
       "description": "rico panque con extracto de limón",
       "image": "/assets/img/default-product.png",
       "ImgAltText": "",
-      "tags": ["offer", "fav"]
+      "tags": ["offer", "fav", "pasteles"]
   },
   {
       "name": "sugar cookie",
@@ -40,7 +40,7 @@
       "description": "galleta de azúcar",
       "image": "/assets/img/default-product.png",
       "ImgAltText": "",
-      "tags": []
+      "tags": ["galletas"]
   },
   {
       "name": "macadamia nut cookie",
@@ -48,7 +48,7 @@
       "description": "galleta de nuez de macadamia",
       "image": "/assets/img/default-product.png",
       "ImgAltText": "",
-      "tags": []
+      "tags": ["galletas"]
   },
   {
       "name": "gingerbread cookie",
@@ -80,7 +80,7 @@
       "description": "galleta italiana de almendras",
       "image": "/assets/img/default-product.png",
       "ImgAltText": "",
-      "tags": ["new"]
+      "tags": ["veganos"]
   }
   ]
 }

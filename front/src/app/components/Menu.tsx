@@ -7,15 +7,24 @@ import MenuGrid from "./MenuGrid";
 
 // componente
 const Menu = () => {
-
   return (
     <div className=" w-full h-screen bg-white ">
+      {/* Menu Banner */}
+      <div className="bg-cerulean w-full h-20 relative">
+        <h1 className="absolute bottom-0 text-4xl ml-10 mb-3 font-bold text-white">
+          Menú
+        </h1>
+      </div>
+
       {/* Favorites Section */}
-      <div className="h-[250px] bg-yellow-100 flex flex-col ">
+      <div className="h-[250px] bg-pampas flex flex-col pt-3">
         {/* Title */}
-        <div className="text-lg text-left ml-10 my-2"> Favoritos </div>
+        <div className="text-lg text-left ml-10 my-2 font-bold text-cerulean">
+          {" "}
+          Favoritos{" "}
+        </div>
         {/* Grid */}
-        <div className="flex w-full h-full overflow-x-auto whitespace-nowrap gap-3 flex-row ml-10">
+        <div className="flex w-full h-full overflow-scroll gap-3 flex-row pl-10">
           {inventory.inventory
             .filter((product: ProductInterface) => product.tags.includes("fav"))
             .map((product: ProductInterface, index: number) => (
@@ -28,10 +37,6 @@ const Menu = () => {
 
       {/* Tabs */}
       <MenuTabs />
-          
-      {/* Grid */}
-      <MenuGrid />
-      
     </div>
   );
 };

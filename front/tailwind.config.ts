@@ -10,6 +10,7 @@ const config: Config = {
     colors: {
       cerulean: "#1B4FC2",
       pampas: "#F2EEEB",
+      white: "#FFFFFF",
     },
     extend: {
       fontFamily: {
