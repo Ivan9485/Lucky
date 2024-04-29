@@ -1,7 +1,7 @@
 import inventory from "@/app/data/inventory.json";
 import { ProductInterface } from "../utils/inventory.interface";
 import Image from "next/image";
-import MenuFavoriteCard from "./MenuFavoriteCard";
+import FavoriteCard from "./FavoriteCard";
 import MenuTabs from "./MenuTabs";
 import MenuGrid from "./MenuGrid";
 
@@ -28,7 +28,7 @@ const Menu = () => {
           {inventory.inventory
             .filter((product: ProductInterface) => product.tags.includes("fav"))
             .map((product: ProductInterface, index: number) => (
-              <MenuFavoriteCard key={index} product={product} />
+              <FavoriteCard key={index} product={product} />
             ))}
         </div>
       </div>

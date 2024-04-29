@@ -1,16 +1,14 @@
+'use client'
 import { ProductInterface } from "../utils/inventory.interface";
 import Image from "next/image";
 
-interface FavoriteCardProps {
-  index: number;
-  product: ProductInterface;
-}
 
-const MenuFavoriteCard: React.FC<FavoriteCardProps> = ({ product, index }) => {
+const MenuFavoriteCard: React.FC<{product:ProductInterface, key:number}> = ({product, key}) => {
   return (
     <div
-      key={index}
+      key={key}
       className="flex flex-col content-center rounded-md shadow-md bg-white h-[170px] min-w-52 relative"
+      onClick={() => console.log("Product clicked")}
     >
       <Image
         src={product.image}

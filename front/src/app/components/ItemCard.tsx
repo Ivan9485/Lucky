@@ -1,15 +1,12 @@
 import { ProductInterface } from "../utils/inventory.interface";
 import Image from 'next/image';
 
-interface ItemCardProps {
-  index: number,
-  product: ProductInterface
-}
-const MenuItemCard: React.FC<ProductInterface> = ({product, index}) => {
+
+const ItemCard: React.FC<{product:ProductInterface, key:number}> = ({product, key}) => {
   
 
   return (
-    <div key={index} className="mb-6 shadow-xl bg-white h-60 w-[165px] rounded-md flex justify-center flex-col">
+    <div key={key} className="mb-6 shadow-xl bg-white h-60 w-[165px] rounded-md flex justify-center flex-col">
       <Image
         src={product.image}
         alt={product.ImgAltText || "Product Image"}
@@ -22,4 +19,4 @@ const MenuItemCard: React.FC<ProductInterface> = ({product, index}) => {
     </div>
   )
 }
-export default MenuItemCard
+export default ItemCard

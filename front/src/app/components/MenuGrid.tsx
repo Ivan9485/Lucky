@@ -1,7 +1,7 @@
 import { ProductInterface } from "../utils/inventory.interface"
-import MenuItemCard from "./MenuItemCard"
+import ItemCard from "./ItemCard"
 
-const MenuGrid: React.FC<ProductInterface> = ({products}) => {
+const MenuGrid: React.FC<{products:ProductInterface[]}> = ({products}) => {
   return (
     <div className="flex w-full justify-center">
     <div className="grid grid-cols-2 w-[500px] h-full pt-8 overflow-y-scroll ml-3 ">
@@ -9,14 +9,14 @@ const MenuGrid: React.FC<ProductInterface> = ({products}) => {
         <div className="h-10 text-3xl m-3">Todos</div>
         {
           products.map((product: ProductInterface, index: number) => (
-            index % 2 === 0 && <MenuItemCard product={product} key={product.id} />
+            index % 2 === 0 && <ItemCard product={product} key={index} />
           ))
         }
       </div>
       <div >
         {
           products.map((product: ProductInterface, index: number) => (
-            index % 2 !== 0 && <MenuItemCard product={product} key={product.id}/>
+            index % 2 !== 0 && <ItemCard product={product} key={index}/>
           ))
         }
       </div>
