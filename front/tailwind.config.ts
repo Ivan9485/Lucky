@@ -11,6 +11,7 @@ const config: Config = {
       cerulean: "#1B4FC2",
       pampas: "#F2EEEB",
       white: "#FFFFFF",
+      black: "#000000",
     },
     extend: {
       fontFamily: {

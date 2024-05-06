@@ -1,6 +1,6 @@
 import { ProductInterface } from "../utils/inventory.interface"
 
-const ItemDetail: React.FC<ProductInterface> = ({props}) => {
+const ItemDetail = ({props}: ProductInterface) => {
   return (
     <div>ItemDetail</div>
   )

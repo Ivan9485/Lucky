@@ -2,8 +2,12 @@
 import { ProductInterface } from "../utils/inventory.interface";
 import Image from "next/image";
 
+interface FavoriteCardProps {
+  product: ProductInterface;
+  key: number;
+}
 
-const MenuFavoriteCard: React.FC<{product:ProductInterface, key:number}> = ({product, key}) => {
+const FavoriteCard = ({product, key}: FavoriteCardProps) => {
   return (
     <div
       key={key}
@@ -22,4 +26,4 @@ const MenuFavoriteCard: React.FC<{product:ProductInterface, key:number}> = ({pro
   );
 };
 
-export default MenuFavoriteCard;
+export default FavoriteCard;
