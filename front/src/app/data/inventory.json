@@ -40,7 +40,7 @@
       "description": "galleta de azúcar",
       "image": "/assets/img/default-product.png",
       "ImgAltText": "",
-      "tags": []
+      "tags": ["galletas"]
   },
   {
       "name": "macadamia nut cookie",
@@ -48,7 +48,7 @@
       "description": "galleta de nuez de macadamia",
       "image": "/assets/img/default-product.png",
       "ImgAltText": "",
-      "tags": []
+      "tags": ["galletas"]
   },
   {
       "name": "gingerbread cookie",
@@ -56,7 +56,7 @@
       "description": "galleta de jengibre",
       "image": "/assets/img/default-product.png",
       "ImgAltText": "",
-      "tags": []
+      "tags": ["galletas"]
   },
   {
       "name": "croissant",
@@ -72,7 +72,7 @@
       "description": "galleta de mantequilla",
       "image": "/assets/img/default-product.png",
       "ImgAltText": "",
-      "tags": ["fav"]
+      "tags": ["galletas"]
   },
   {
       "name": "biscotti cookie",
@@ -80,7 +80,7 @@
       "description": "galleta italiana de almendras",
       "image": "/assets/img/default-product.png",
       "ImgAltText": "",
-      "tags": ["new"]
+      "tags": ["new","galletas"]
   }
   ]
 }

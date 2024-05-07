@@ -1,39 +1,44 @@
 "use client";
 import MenuGrid from "./MenuGrid";
-import inventory from "@/app/data/inventory.json";
+import {inventory} from "@/app/data/inventory.json";
 import { useState, useEffect } from "react";
 import { ProductInterface } from "../utils/inventory.interface";
 
 const MenuTabs = () => {
   const [active, setActive] = useState("todos");
-  const [products, setProducts] = useState(inventory.inventory);
+  const [products, setProducts] = useState(inventory);
+  const [selectedTab, setSelectedTab] = useState("todos")
 
   useEffect(() => {
     switch (active) {
       case "todos":
-        setProducts(inventory.inventory);
+        setProducts(inventory);
+        setSelectedTab("Todos")
         
         break;
       case "galletas":
         setProducts(
-          inventory.inventory.filter((product: ProductInterface) =>
+          inventory.filter((product: ProductInterface) =>
             product.tags.includes("galletas")
           )
         );
+        setSelectedTab("Galletas")
         break;
       case "pasteles":
         setProducts(
-          inventory.inventory.filter((product: ProductInterface) =>
+          inventory.filter((product: ProductInterface) =>
             product.tags.includes("pasteles")
           )
         );
+        setSelectedTab("Pasteles")
         break;
       case "veganos":
         setProducts(
-          inventory.inventory.filter((product: ProductInterface) =>
+          inventory.filter((product: ProductInterface) =>
             product.tags.includes("veganos")
           )
         );
+        setSelectedTab("Veganos")
         break;
       default:
         break;
@@ -87,7 +92,7 @@ const MenuTabs = () => {
         </div>
       </div>
       {/* Grid */}
-      <MenuGrid products={products} />
+      <MenuGrid products={products} selectedTab={selectedTab}/>
     </div>
   );
 };

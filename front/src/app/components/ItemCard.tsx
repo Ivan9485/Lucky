@@ -6,21 +6,14 @@ import { useState } from "react";
 interface ItemCardProps {
   product: ProductInterface;
   key: number;
+  onClick: () => void;
 }
 
-const ItemCard = ({product, key}:ItemCardProps) => {
-  const [modalIsOpen, setModalIsOpen] = useState(false);
-
-  const openModal = () => {
-    setModalIsOpen(true);
-  };
-
-  const closeModal = () => {
-    setModalIsOpen(false);
-  };
+const ItemCard = ({product, key, onClick}: ItemCardProps) => {
+  
 
   return (
-    <div key={key} className="mb-6 shadow-xl bg-white h-60 w-[165px] rounded-md flex justify-center flex-col" onClick={openModal}>
+    <div key={key} className="mb-6 shadow-xl bg-white h-60 w-[165px] rounded-md flex justify-center flex-col" onClick={onClick}>
       <Image
         src={product.image}
         alt={product.ImgAltText || "Product Image"}
